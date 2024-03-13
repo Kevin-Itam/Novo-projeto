@@ -4,42 +4,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/3a1453d3f1.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../visual/css/style.css">
     <title>Portfolio</title>
 </head>
 
 <body>
+    <!-- video background-->
     <video autoplay loop muted playsinline>
         <source src="../img/pattern_-_85590 (Original).mp4" type="video/mp4">
         Seu navegador não suporta o elemento de vídeo.
-      </video>
-    <section class="global">
-        <div class="fixo">
-            <div class="perfil">
-                <header>
-                    <div>Kevin I. A. Gazaniga</div>
-                    <div>Desenvolvedor web</div>
-                </header>
-                <img src="../img/3135768.png" alt="perfil" style="height:100px;">
-                <div class="box1">
-                    <p>kevinitamar@gmail.com</p>
-                    <p>Joinville/SC, BR</p>
+    </video>
+    <!-- Perfil lateral fixo -->
+    <div class="fixo">
+        <div class="perfil">
+            <header>
+                <div>Kevin I. A. <br>Gazaniga</div>
+                <div>Desenvolvedor<br>web</div>
+            </header>
+            <img src="../img/me.jpg" alt="perfil">
+            <div class="box1">
+                <p>kevinitamar@gmail.com</p>
+                <p>Joinville/SC, BR</p>
+            </div>
+            <nav>
+                <ul class="link_tree">
+                    <li class="icon"><a href="https://github.com/"><i class="fa-brands fa-github"></i></a></li>
+                </ul>
+            </nav>
+            <footer align="center"><button>EMAIL</button></footer>
+        </div>
+    </div>
+    <!-- Conteudo central movel -->
+    <section class="movel">
+        <div class="container">
+            <div class="div_container container_content">
+                <div class="content_header">
+                    <div class="section_header">
+                        <h4><i class="fa-solid fa-house"></i> Introdução </h4>
+                        <h1>Say Hi from <span>Drake</span>, Framer Designer and Developer</h1>
+                    </div>
                 </div>
-                <nav>
-                    <ul class="link_tree">
-                        <li>Github</li>
-                        <li>EMAIL</li>
-                    </ul>
-                </nav>
-                <footer align="center"><button>EMAIL</button></footer>
             </div>
         </div>
-
-        <div class="movel">
-            <section>
-
-            </section>
-        </div>
     </section>
+
+    <script src="../back/script.js"></script>
 
 </html>

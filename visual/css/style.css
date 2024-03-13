@@ -43,10 +43,13 @@ video {
 
 .fixo {
   position: fixed;
-  top: 15vh;
-  left: 5vw;
-  border-radius: 10px;
-  border: 2px solid rgb(0, 0, 0);
+  top: 50%;
+  left: 20px;
+  transform: translateY(-50%);
+  border-radius: 30px;
+  border: 1px solid rgb(0, 0, 0);
+  padding: 50px;
+  z-index: 10;
 }
 .fixo ul, .fixo ol {
   list-style-type: none;
@@ -57,46 +60,121 @@ video {
 .perfil {
   display: grid;
   grid-template-rows: 50px 100px 50px 50px 50px;
-  gap: 40px;
+  gap: 80px;
+  margin: 20px;
 }
 
 header {
-  position: relative;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 10px;
+  gap: 20px;
+}
+header div {
+  font-size: 16px;
+  font-weight: 600;
 }
 
 img {
   position: relative;
-  border: 2px solid black;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  max-width: 250px;
+  border-radius: 30px;
 }
 
 .box1 {
   display: grid;
   grid-template-rows: repeat(2, 1fr);
 }
+.box1 p {
+  font-size: 16px;
+  font-weight: 600;
+}
 
 .link_tree {
+  position: relative;
+  top: 25%;
+  left: 50%;
+  transform: translate(-25%, -25%);
   display: grid;
-  grid-template-columns: 20px 20px;
+  grid-template-columns: 50px 50px;
   gap: 20px;
 }
 
+.icon a i {
+  width: 70px;
+  height: 70px;
+  line-height: 65px;
+  font-size: 50px;
+  text-align: center;
+  border: 3px solid black;
+  color: black;
+  border-radius: 50%;
+  transition: 0.3s;
+}
+.icon a i:hover {
+  color: gray;
+  border: 3px solid gray;
+}
+
 button {
-  height: 80%;
-  width: 80%;
-  background-color: gray;
-  border: 0;
-  border-radius: 9px;
-  transition: all 1s;
+  height: 100%;
+  width: 100%;
+  color: white;
+  background-color: rgb(0, 0, 0);
+  border: 3px solid black;
+  border-radius: 30px;
+  transition: all 0.8s;
 }
 button:hover {
-  color: white;
-  background-color: black;
+  cursor: pointer;
+  color: rgb(0, 0, 0);
+  background: none;
+}
+
+.movel {
+  height: 100%;
+  width: 100%;
+  padding: 68px 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.container {
+  max-width: 1130px;
+  padding: 0 15px;
+  margin: auto;
+}
+
+.div_container {
+  position: relative;
+  z-index: 3;
+}
+
+.container_content {
+  max-width: 770px;
+  width: 100%;
+  margin-left: auto;
+}
+
+h4 {
+  font-size: 12px;
+  color: #000000;
+  text-transform: uppercase;
+  font-weight: 300;
+  margin: 0;
+  border: 1px solid #565656;
+  padding: 9px 20px;
+  border-radius: 30px;
+  margin-bottom: 53px;
+  display: inline-flex;
+  align-items: center;
+}
+h4 i {
+  margin-bottom: 1px;
+  font-size: 14px;
+  margin-right: 10px;
 }
 
 /*# sourceMappingURL=style.css.map */
