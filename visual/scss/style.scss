@@ -62,7 +62,7 @@
 
     }
   }
-  img{
+  .perfil_img{
     position: relative;
     top: 50%;
     left: 50%;
@@ -125,6 +125,11 @@
   .movel{
     height: 100%;
     width: 100%;
+    padding: 28px 0;
+    position: relative;
+    overflow: hidden;
+  }
+  .mobile_container{
     padding: 68px 0;
     position: relative;
     overflow: hidden;
@@ -142,6 +147,42 @@
     max-width: 770px;
     width: 100%;
     margin-left: auto;
+  }
+  .content_header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: 1px solid black;
+    & p{
+      display: block;
+      align-self: baseline;
+    }
+    &  .way_profile{
+      width: 200px;
+      height: 200px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-left: auto;
+      border-radius: 50%;
+      border: 2px solid #575757;
+      position: relative;
+      overflow: hidden;
+      margin-right: 15px;
+      margin-bottom: 125px;
+      & i{
+        position: absolute;
+        color: #000000;
+        font-size: 40px;
+        display: block;
+  
+      }
+      .port_link{
+        max-width:150px;
+        display: block;
+        animation: rotating 6s infinite linear;
+      }
+    }
   }
   h4{
     font-size: 12px;
@@ -161,3 +202,20 @@
       margin-right: 10px;
     }
   }
+  h1{
+    font-size: 78px;
+    letter-spacing: -0.2px;
+    line-height: 90px;
+    margin-bottom: 43px;
+    font-weight: 300;
+  }
+
+  @keyframes rotating {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
