@@ -164,12 +164,6 @@ button:hover {
   margin-left: auto;
 }
 
-.content_header {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  border-bottom: 1px solid black;
-}
 .content_header p {
   display: block;
   align-self: baseline;
@@ -186,7 +180,6 @@ button:hover {
   position: relative;
   overflow: hidden;
   margin-right: 15px;
-  margin-bottom: 125px;
 }
 .content_header .way_profile i {
   position: absolute;
@@ -198,6 +191,24 @@ button:hover {
   max-width: 150px;
   display: block;
   animation: rotating 6s infinite linear;
+}
+.content_header .formation {
+  display: flex;
+  flex-direction: row;
+  padding-top: 50px;
+}
+.content_header .formation div {
+  text-align: center;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 20px 70px;
+}
+.content_header .formation .formation_1 {
+  border-left: 2.1px solid rgb(151, 151, 151);
+  border-right: 2.1px solid rgb(151, 151, 151);
+}
+.content_header .formation .formation_2 {
+  border-right: 2.1px solid rgb(151, 151, 151);
 }
 
 h4 {

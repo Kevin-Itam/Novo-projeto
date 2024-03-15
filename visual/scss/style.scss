@@ -149,15 +149,11 @@
     margin-left: auto;
   }
   .content_header{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border-bottom: 1px solid black;
     & p{
       display: block;
       align-self: baseline;
     }
-    &  .way_profile{
+    & .way_profile{
       width: 200px;
       height: 200px;
       display: flex;
@@ -169,7 +165,6 @@
       position: relative;
       overflow: hidden;
       margin-right: 15px;
-      margin-bottom: 125px;
       & i{
         position: absolute;
         color: #000000;
@@ -177,10 +172,28 @@
         display: block;
   
       }
-      .port_link{
+      & .port_link{
         max-width:150px;
         display: block;
         animation: rotating 6s infinite linear;
+      }
+    }
+    & .formation{
+      display: flex;
+      flex-direction: row;
+      padding-top: 50px;
+      & div{
+        text-align: center;
+        font-size: 16px;
+        font-weight: 600;
+        padding:20px 70px;
+      }
+      & .formation_1{
+        border-left: 2.1px solid rgb(151, 151, 151);
+        border-right: 2.1px solid rgb(151, 151, 151);
+      }
+      & .formation_2{
+        border-right: 2.1px solid rgb(151, 151, 151);
       }
     }
   }
