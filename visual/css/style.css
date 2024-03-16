@@ -44,11 +44,11 @@ video {
 .fixo {
   position: fixed;
   top: 50%;
-  left: 20px;
+  left: 100px;
   transform: translateY(-50%);
   border-radius: 30px;
   border: 1px solid rgb(0, 0, 0);
-  padding: 50px;
+  padding: 30px 30px;
   z-index: 10;
 }
 .fixo ul, .fixo ol {
@@ -70,7 +70,8 @@ header {
   gap: 20px;
 }
 header div {
-  font-size: 16px;
+  line-height: 20px;
+  font-size: 18px;
   font-weight: 600;
 }
 
@@ -84,12 +85,15 @@ header div {
 }
 
 .box1 {
+  justify-content: center;
+  align-items: center;
   display: grid;
   grid-template-rows: repeat(2, 1fr);
 }
 .box1 p {
-  font-size: 16px;
-  font-weight: 600;
+  line-height: 35px;
+  font-size: 24px;
+  font-weight: 300;
 }
 
 .link_tree {
@@ -99,7 +103,7 @@ header div {
   transform: translate(-25%, -25%);
   display: grid;
   grid-template-columns: 50px 50px;
-  gap: 20px;
+  gap: 10%;
 }
 
 .icon a i {
