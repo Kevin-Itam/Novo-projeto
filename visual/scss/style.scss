@@ -1,5 +1,5 @@
-@import "./variaveis.scss";
-@import "./buton.scss";
+// @import "./variaveis.scss";
+// @import "./buton.scss";
 
 // p{
 //     color:$color-orange ;
@@ -12,7 +12,14 @@
     box-sizing: border-box;
     font-family: Arial, sans-serif;
   }
-  
+  // ::-webkit-scrollbar {
+  //     width: 0px
+  // }
+  // body{
+  //   scrollbar-width: none; /* Firefox */
+  //   -ms-overflow-style: none; /* IE e Edge */
+  // }
+
   html, body {
     margin: 0;
     padding: 0;
@@ -85,18 +92,18 @@
   .link_tree{
     position: relative;
     top: 25%;
-    left: 50%;
+    left: 35%;
     transform: translate(-25%,-25%);
     display:grid;
-    grid-template-columns:(50px 50px);
+    grid-template-columns:(50px 50px 50px);
     gap: 10%;
   }
  
   .icon a i {
-    width: 70px;
-    height: 70px;
-    line-height: 65px;
-    font-size: 50px;
+    width: 60px;
+    height: 60px;
+    line-height: 55px;
+    font-size: 30px;
     text-align: center;
     border: 3px solid black;
     color: black;
@@ -137,6 +144,7 @@
   // menu scroll
 
   .menu_scroll{
+    display: flex;
     flex-direction: column;
     border: 1px solid #575757;
     border-radius: 30px;
@@ -145,7 +153,7 @@
     top: 322px;
     width: 55px;
     text-align: center;
-    gap: 20px;
+    gap: 35px;
     padding: 24px 0;
     z-index: 20;
     & a{
@@ -158,8 +166,17 @@
     }
     & li{
       list-style: none;
+      &:hover{
+        color: #a5881d;
+      }
+    }
+    &  i{
+      font-size: 20px;
+      color: #000000;
     }
     & span{
+      background-color: #000000;
+      color: #ffffff;
       position: absolute;
       transition: .3s;
       font-size: 12px;
@@ -169,8 +186,29 @@
       border-radius: 5px;
       visibility: hidden;
       opacity: 0;
+
     }
   }
+  .menu_scroll li a:hover i {
+    color: #a5881d;
+}
+
+.menu_scroll li a:hover span {
+    visibility: visible;
+    opacity: 1;
+}
+.menu_scroll li a:hover span::before{
+    content: '';
+    width: 10px;
+    height: 10px;
+    background: #000000;
+    position: absolute;
+    right: -3px;
+    top: 50%;
+    transform: rotate(54deg) skew(-8deg, -39deg);
+    margin-top: -5px;
+    z-index: -1;
+}
   // config sessao movel \\
 
  // global page
@@ -273,7 +311,7 @@ h2{
     position: relative;
     overflow: hidden;
     &  h1{
-      font-size: 78px;
+      font-size: 65px;
       letter-spacing: -0.2px;
       line-height: 90px;
       margin-bottom: 43px;
@@ -363,7 +401,13 @@ h2{
       font-weight: 700;
     }
     &  h2{
-      font-size: 25px;
+      font-size: 27px;
+      font-weight: 300;
+      margin-bottom: 5px;
+      line-height: 45px;
+    }
+    & h3{
+      font-size: 22px;
       font-weight: 300;
       margin-bottom: 5px;
       line-height: 45px;
@@ -374,8 +418,20 @@ h2{
       transition: .3s;
     }
     & p{
-      font-size: 15px;
+      font-size: 17px;
       margin-bottom: 18px;
+    }
+    & ul{
+      list-style: none;
+    }
+    &  li{
+      font-size: 27px;
+      margin-bottom: 18px;
+      & span{
+        font-size: 17px;
+        margin-top: 18px;
+        margin-bottom: 18px;
+      }
     }
   }
 
@@ -403,7 +459,7 @@ h2{
   .service_item{
     border: 3px solid #000000;
     border-radius: 20px;
-    transition: .3s;
+    transition: .2s;
     position: relative;
     padding: 44px 48px 41px 48px;
     margin-bottom: 10px;
@@ -432,8 +488,7 @@ h2{
 
   // page 5
   .section_skills{
-    padding-top: 90px;
-    padding-bottom: 40px;
+    padding-bottom: 30px;
   }
   .skills_container{
     padding: 68px 0;
@@ -443,6 +498,7 @@ h2{
   .type_skills{
     display: flex;
     flex-wrap: wrap;
+    gap: 50px;
   }
   .container_skill{
     display: flex;
@@ -455,18 +511,33 @@ h2{
     }
   }
   .skills{
-    border: 2px solid #565656;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    align-items: center;
+    border: 3px solid #000000;
     border-radius: 85px;
-    padding: 80px 55px 80px 55px;
+    padding: 40px 0px 40px 0px;
     margin-bottom: 20px;
-    transition: .3s;
+    transition: 0.3s;
+    &:hover{
+      border: 3px solid #a5881d;
+    }
+    & img{
+      display: block;
+      margin:  auto 30px auto;
+      max-width: 100%;
+    }
+    & h1{
+      font-size: 30px;
+      font-weight: 300;
+      margin: 0;
+    }
   }
 
   // page 6
 
   .projects{
-    height:80%;
-    width: 100%;
     padding: 28px 0;
     position: relative;
   }
@@ -506,15 +577,25 @@ h2{
     height: 410px;
     width: 700px;
     border: 1px solid black;
-    & a{
-      text-decoration: none;
-    }
+
     & img{
       display: block;
       width: 100%;
       height: 100%;
       object-fit: cover;
     }
+  }
+  .preview_projects{
+    & a{
+      color: #000000;
+      text-decoration: none;
+      display: inline-block;
+      border-bottom: 1px solid transparent;
+      transition: .3s;
+    }
+  }
+  .preview_projects:hover h2{
+    text-decoration: #000000;
   }
   // animations section //
 
