@@ -351,8 +351,18 @@ h2{
     position: relative;
     overflow: hidden;
   }
-
-
+  .about_section{
+    & ul{ 
+      display: grid;
+      grid-template-columns: 100px 100px;
+      gap: 100px;
+      margin-top: 50px;
+    }
+  }
+  .div_p{
+    line-height: 30px;
+    max-width: 610px;
+  }
   // page 3
   .formation_container{
     padding: 68px 0;
@@ -396,7 +406,7 @@ h2{
   }
   .list{
     padding-left: 74px;
-    padding-bottom: 68px;
+    padding-bottom: 30px;
     & .date{
       font-weight: 700;
     }
