@@ -334,11 +334,30 @@ h2 {
   overflow: hidden;
 }
 
-.about_section ul {
-  display: grid;
-  grid-template-columns: 100px 100px;
-  gap: 100px;
+.resume_info {
   margin-top: 50px;
+}
+.resume_info .info {
+  display: grid;
+  align-items: center;
+  margin-bottom: 10px;
+  grid-template-columns: 120px 50px 250px;
+}
+.resume_info .info p {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 26px;
+}
+.resume_info .info span {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 26px;
+}
+.resume_info .info h1 {
+  margin-left: 20px;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 26px;
 }
 
 .div_p {
