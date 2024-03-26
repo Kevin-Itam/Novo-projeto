@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/3a1453d3f1.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../visual/css/style.css">
-
+    
     <title>Portfolio</title>
 </head>
 
@@ -35,25 +35,72 @@
                     <li class="icon"><a href="#"><i class="fa-brands fa-whatsapp"></i></a></li>
                 </ul>
             </nav>
-            <footer align="center"><button><i class="fa-solid fa-envelope"></i>CONTATE-ME !</CONTATE-ME></button>
+            <footer align="center"><a href="../pdf/Currículo.pdf" download="Curriculo"><button><i
+                            class="fa-regular fa-folder-open"></i>Curriculo</button></a>
             </footer>
         </div>
     </div>
+    <!-- ICON MENU -->
+    <span class="icon_menu" onclick="toggleElement('toggle')">
+        <span class="bar"></span>
+        <span class="bar"></span>
+    </span>
+    <!-- NAV-BAR -->
+    <div id="toggle">
+        <section class="sidebar_responsive">
+            <div class="overlay"></div>
+            <div class="sidebar">
+                <div class="side_menu">
+                    <p>Menu</p>
+                    <ul class="menu">
+                        <li><a class="scroll-to" onclick="scrollElement('home')"><i
+                                    class="fa-solid fa-house"></i><span>Home</span></a></li>
+                        <li><a class="scroll-to" onclick="scrollElement('about')"><i
+                                    class="fa-solid fa-user"></i><span>About</span></a></li>
+                        <li><a class="scroll-to" onclick="scrollElement('formation')"><i
+                                    class="fa-solid fa-user-graduate"></i><span>Graduacao</span></a>
+                        </li>
+                        <li><a class="scroll-to" onclick="scrollElement('tech')"><i
+                                    class="fa-solid fa-toolbox"></i><span>Tech</span></a></li>
+                        <li><a class="scroll-to" onclick="scrollElement('skill')"><i
+                                    class="fa-solid fa-shapes"></i><span>Skills</span></a></li>
+                        <li><a class="scroll-to" onclick="scrollElement('port')"><i
+                                    class="fa-solid fa-grip-vertical"></i><span>Portifolios</span></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="side_social">
+                    <p>Contatos</p>
+                    <ul class="menu_social">
+                        <li><a href="https://github.com/"><i class="fa-brands fa-github"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-whatsapp"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </div>
     <!-- Menu scroll -->
     <ul class="menu_scroll ">
-        <li class="scroll-to "><a href="#home"><span>Home</span><i class="fa-solid fa-house"></i></a></li>
-        <li class="scroll-to "><a href="#about"><span>About</span><i class="fa-solid fa-user"></i></a></li>
-        <li class="scroll-to "><a href="#formation"><span>Graduacao</span><i class="fa-solid fa-user-graduate"></i></a>
+        <li class="scroll-to "><a class="nav__link" onclick="scrollElement('home')"><span>Home</span><i class="fa-solid fa-house"></i></a>
         </li>
-        <li class="scroll-to "><a href="#tech"><span>Tech</span><i class="fa-solid fa-toolbox"></i></a></li>
-        <li class="scroll-to "><a href="#linguage"><span>Skills</span><i class="fa-solid fa-shapes"></i></a></li>
-        <li class="scroll-to "><a href="#projects"><span>Portifolios</span><i class="fa-solid fa-grip-vertical"></i></a>
+        <li class="scroll-to "><a class="nav__link" onclick="scrollElement('about')"><span>About</span><i
+                    class="fa-solid fa-user"></i></a></li>
+        <li class="scroll-to "><a class="nav__link" onclick="scrollElement('formation')"><span>Graduacao</span><i
+                    class="fa-solid fa-user-graduate"></i></a>
+        </li>
+        <li class="scroll-to "><a class="nav__link" onclick="scrollElement('tech')"><span>Tech</span><i
+                    class="fa-solid fa-toolbox"></i></a></li>
+        <li class="scroll-to "><a class="nav__link" onclick="scrollElement('skill')"><span>Skills</span><i
+                    class="fa-solid fa-shapes"></i></a></li>
+        <li class="scroll-to "><a class="nav__link" onclick="scrollElement('port')"><span>Portifolios</span><i
+                    class="fa-solid fa-grip-vertical"></i></a>
         </li>
     </ul>
     <!-- Conteudo central movel -->
 
     <!-- PAGE 1 -->
-    <section class="movel">
+    <section class="movel" id="home">
         <div class="mobile_container">
             <div class="container">
                 <div class="div_container container_content">
@@ -83,19 +130,21 @@
 
     <!-- PAGE 2 -->
 
-    <section class="about">
+    <section class="about" id="about">
         <div class="about_container">
             <div class="container">
                 <div class="div_container container_content">
                     <div class="content_header">
-                        <div  class="about_section">
+                        <div class="about_section">
                             <div class="section_header">
                                 <h4><i class="fa-solid fa-user" style="color: black;"></i>sobre mim </h4>
                                 <h2>Um pouco sobre mim</h1>
                             </div>
                             <div class="div_p">
-                                <p>Olá! Me chamo Kevin Itamar. Iniciei meus estudos como desenvolvedor web há dois anos. Em
-                                    2023, concluí meu curso Técnico de Desenvolvimento de Sistemas e, no ano seguinte, em
+                                <p>Olá! Me chamo Kevin Itamar. Iniciei meus estudos como desenvolvedor web há dois anos.
+                                    Em
+                                    2023, concluí meu curso Técnico de Desenvolvimento de Sistemas e, no ano seguinte,
+                                    em
                                     2024, dei início a uma graduação na mesma área. Durante esse período, adquiri
                                     conhecimento amplo como full stack, com foco especializado em front-end. </p>
                             </div>
@@ -105,7 +154,7 @@
                                     <h1>:</h1>
                                     <span>Kevin Itamar Amorim Gazaniga</span>
                                 </div>
-                                
+
                                 <div class="info">
                                     <p>Nacionalidade</p>
                                     <h1>:</h1>
@@ -135,7 +184,7 @@
         <div class="formation_container">
             <div class="container">
                 <div class="container_content">
-                    <div class="content_header">
+                    <div class="content_header" id="formation">
                         <div class="section_header">
                             <h4><i class="fa-solid fa-user-graduate" style="color: black;"></i> formações </h4>
                             <h2>Formações e <span style="color:#a5881d;">experiencias</span></h2>
@@ -176,7 +225,7 @@
 
     <!-- PAGE 4 -->
 
-    <section class="section_Expertises">
+    <section class="section_Expertises" id="tech">
         <div class="Expertises_container">
             <div class="container">
                 <div class="container_content">
@@ -213,13 +262,13 @@
     </section>
     <!-- PAGE 5 -->
 
-    <section class="section_skills">
+    <section class="section_skills" id="skill">
         <div class="skills_container">
             <div class="container">
                 <div class="container_content">
                     <div class="content_header">
                         <div class="section_header">
-                            <h4><i class="fa-solid fa-shapes" style="color: black;"></i> Proficiências </h4>
+                            <h4><i class="fa-solid fa-shapes" style="color: black;"></i> Habilidades </h4>
                             <h2>Minhas <span style="color:#a5881d;">especialidades</span></h2>
                         </div>
                         <div class="type_skills">
@@ -267,7 +316,7 @@
 
     <!-- page 6 -->
 
-    <section class="projects">
+    <section class="section_portfolio">
         <div class="projects_container">
             <div class="container">
                 <div class="div_container container_content">
@@ -277,23 +326,10 @@
                             <h2>Meus<span style="color:#a5881d;">projetos</span></h1>
                         </div>
                         <div class="projects_position">
-                            <div class="preview_projects">
-                                <a href="#">
-                                    <div class="preview">
-                                        <img src="../img/me.jpg" alt="Website">
-                                        <ul class="list_tech">
-                                            <li class="tech">html</li>
-                                            <li class="tech">css</li>
-                                            <li class="tech">JS</li>
-                                        </ul>
-                                    </div>
-                                </a>
-                                <h2><a href="#">Bureau - Architecture Studio Website</a></h2>
-                            </div>
                             <div class="projects_position_middle">
-                                <div class="preview_projects">
+                                <div class="preview_projects" id="port">
                                     <a href="#">
-                                        <div class="preview line_2">
+                                        <div class="preview">
                                             <img src="../img/me.jpg" alt="Website">
                                             <ul class="list_tech">
                                                 <li class="tech">html</li>
@@ -318,13 +354,28 @@
                                     <h2><a href="#">Bureau - Architecture Studio Website</a></h2>
                                 </div>
                             </div>
+                            <div class="preview_projects">
+                                <a href="#">
+                                    <div class="preview">
+                                        <img src="../img/me.jpg" alt="Website">
+                                        <ul class="list_tech">
+                                            <li class="tech">html</li>
+                                            <li class="tech">css</li>
+                                            <li class="tech">JS</li>
+                                        </ul>
+                                    </div>
+                                </a>
+                                <h2><a href="#">Bureau - Architecture Studio Website</a></h2>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-
-    <script src="../back/script.js"></script>
+</body>
+<script src="../scripts/script.js"></script>
+<script src="../scripts/scroll.js"></script>
+<script src="../scripts/navbar.js"></script>
 
 </html>
