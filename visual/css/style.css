@@ -24,7 +24,7 @@ video {
 .icon_menu {
   position: absolute;
   right: 68px;
-  top: 60px;
+  top: 50px;
   width: 55px;
   height: 55px;
   border-radius: 50%;
@@ -35,12 +35,11 @@ video {
   justify-content: center;
   gap: 4px;
   cursor: pointer;
-  transition: 0.3s;
   background: #1f1f1f;
-  z-index: 99;
+  z-index: 50;
 }
 .icon_menu span {
-  width: 20px;
+  width: 30px;
   display: block;
   height: 2px;
   background: #fff;
@@ -48,6 +47,7 @@ video {
 }
 
 #toggle {
+  position: relative;
   opacity: 0;
   visibility: hidden;
   z-index: 50;
@@ -120,7 +120,8 @@ video {
   margin-right: 12px;
 }
 .menu a {
-  padding: 15px;
+  text-decoration: none;
+  padding: 12px;
   display: flex;
   align-items: center;
   gap: 10px;
@@ -299,6 +300,7 @@ button i {
   color: #a5881d;
 }
 .menu_scroll i {
+  cursor: pointer;
   font-size: 20px;
 }
 .menu_scroll span {
@@ -397,6 +399,7 @@ h2 {
   position: relative;
   overflow: hidden;
   margin-right: 15px;
+  cursor: pointer;
 }
 .content_header .way_profile i {
   position: absolute;
