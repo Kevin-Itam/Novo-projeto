@@ -10,20 +10,20 @@
 </head>
 
 <body>
-    <!-- video background-->
+    <!-- video background -->
     <video autoplay loop muted playsinline>
         <source src="../img/pattern_-_85590 (Original).mp4" type="video/mp4">
-        Seu navegador não suporta o elemento de vídeo.
+        Your browser does not support the video element.
     </video>
-    <!-- Perfil lateral fixo -->
+    <!-- PERFIL FIXED-->
     <div class="fixo">
         <div class="perfil">
             <header>
                 <div>Kevin I. A. <br>Gazaniga</div>
                 <div>Desenvolvedor<br>web</div>
             </header>
-            <img class="perfil_img" src="../img/me.jpg" alt="perfil">
-            <div class="box1">
+            <img class="perfil_img" src="../img/me.jpg" alt="SELF">
+            <div class="box">
                 <p>kevinitamar@gmail.com</p>
                 <p align="center">Joinville/SC, BR</p>
             </div>
@@ -47,7 +47,7 @@
     </span>
     <!-- NAV-BAR -->
     <div id="toggle">
-        <section class="sidebar_responsive">
+        <div class="sidebar_responsive">
             <div class="overlay"></div>
             <div class="sidebar">
                 <div class="side_menu">
@@ -78,26 +78,27 @@
                     </ul>
                 </div>
             </div>
-        </section>
+        </div>
     </div>
     <!-- Menu scroll -->
     <ul class="menu_scroll ">
-        <li class="scroll-to "><a class="nav__link" onclick="scrollElement('home')"><span>Home</span><i
+        <li class="scroll-to "><a class="nav__link" data-section="home" onclick="scrollElement('home')"><span>Home</span><i
                     class="fa-solid fa-house"></i></a>
         </li>
-        <li class="scroll-to "><a class="nav__link" onclick="scrollElement('about')"><span>About</span><i
+        <li class="scroll-to "><a class="nav__link" data-section="about" onclick="scrollElement('about')"><span>About</span><i
                     class="fa-solid fa-user"></i></a></li>
-        <li class="scroll-to "><a class="nav__link" onclick="scrollElement('formation')"><span>Graduacao</span><i
+        <li class="scroll-to "><a class="nav__link" data-section="formation" onclick="scrollElement('formation')"><span>Graduacao</span><i
                     class="fa-solid fa-user-graduate"></i></a>
         </li>
-        <li class="scroll-to "><a class="nav__link" onclick="scrollElement('tech')"><span>Tech</span><i
+        <li class="scroll-to "><a class="nav__link" data-section="tech" onclick="scrollElement('tech')"><span>Tech</span><i
                     class="fa-solid fa-toolbox"></i></a></li>
-        <li class="scroll-to "><a class="nav__link" onclick="scrollElement('skill')"><span>Skills</span><i
+        <li class="scroll-to "><a class="nav__link" data-section="skill" onclick="scrollElement('skill')"><span>Skills</span><i
                     class="fa-solid fa-shapes"></i></a></li>
-        <li class="scroll-to "><a class="nav__link" onclick="scrollElement('port')"><span>Portifolios</span><i
+        <li class="scroll-to "><a class="nav__link" data-section="port" onclick="scrollElement('port')"><span>Portifolios</span><i
                     class="fa-solid fa-grip-vertical"></i></a>
         </li>
     </ul>
+
     <!-- Conteudo central movel -->
 
     <!-- PAGE 1 -->
@@ -126,13 +127,12 @@
                 </div>
             </div>
         </div>
-
     </section>
 
     <!-- PAGE 2 -->
     <section class="about" id="about">
-        <div class="about_container" >
-            <div class="container" >
+        <div class="about_container">
+            <div class="container">
                 <div class="div_container container_content">
                     <div class="content_header">
                         <div class="about_section">
@@ -180,11 +180,11 @@
 
     <!-- PAGE 3 -->
 
-    <section class="section_formation">
+    <section class="section_formation" id="formation">
         <div class="formation_container">
             <div class="container">
                 <div class="container_content">
-                    <div class="content_header" id="formation">
+                    <div class="content_header">
                         <div class="section_header">
                             <h4><i class="fa-solid fa-user-graduate" style="color: black;"></i> formações </h4>
                             <h2>Formações e <span style="color:#a5881d;">experiencias</span></h2>
@@ -316,7 +316,7 @@
 
     <!-- page 6 -->
 
-    <section class="section_portfolio">
+    <section class="section_portfolio" id="port">
         <div class="projects_container">
             <div class="container">
                 <div class="div_container container_content">
@@ -327,7 +327,7 @@
                         </div>
                         <div class="projects_position">
                             <div class="projects_position_middle">
-                                <div class="preview_projects" id="port">
+                                <div class="preview_projects">
                                     <a href="#">
                                         <div class="preview">
                                             <img src="../img/me.jpg" alt="Website">
@@ -375,7 +375,6 @@
     </section>
 
 </body>
-
 <script src="../scripts/script.js"></script>
 <script src="../scripts/scroll.js"></script>
 <script src="../scripts/navbar.js"></script>
