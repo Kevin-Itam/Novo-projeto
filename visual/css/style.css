@@ -21,6 +21,11 @@ video {
   z-index: -1;
 }
 
+p {
+  font-size: 18px;
+  line-height: 30px;
+}
+
 h4 {
   font-size: 12px;
   color: #000000;
@@ -710,6 +715,7 @@ button i {
 .projects_position_middle {
   display: flex;
   flex-direction: row;
+  gap: 100px;
 }
 .projects_position_middle .preview {
   max-width: 300px;

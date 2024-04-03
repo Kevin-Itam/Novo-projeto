@@ -709,6 +709,7 @@ h2{
   .projects_position_middle{
     display: flex;
     flex-direction: row;
+    gap: 100px;
     & .preview{
       max-width: 300px;
     }
