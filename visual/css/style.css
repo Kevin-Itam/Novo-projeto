@@ -611,7 +611,7 @@ button i {
 .type_skills {
   display: flex;
   flex-wrap: wrap;
-  gap: 50px;
+  gap: 10px;
 }
 
 .container_skill {
@@ -628,16 +628,16 @@ button i {
 .skills {
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  gap: 5px;
   align-items: center;
-  border: 3px solid #000000;
-  border-radius: 85px;
+  border: 2px solid #000000;
+  border-radius: 10px;
   padding: 40px 0px 40px 0px;
   margin-bottom: 20px;
   transition: 0.3s;
 }
 .skills:hover {
-  border: 3px solid #a5881d;
+  border: 2px solid #a5881d;
 }
 .skills img {
   display: block;
@@ -645,7 +645,7 @@ button i {
   max-width: 100%;
 }
 .skills h1 {
-  font-size: 30px;
+  font-size: 20px;
   font-weight: 300;
   margin: 0;
 }
