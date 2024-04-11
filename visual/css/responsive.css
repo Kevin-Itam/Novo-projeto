@@ -1,0 +1,31 @@
+@media screen and (max-width: 1400px) {
+  .perfil {
+    margin: 0;
+    gap: 60px;
+  }
+  .fixo {
+    position: relative;
+    max-width: 767px;
+    left: 0;
+    margin: auto;
+    top: 0;
+    transform: translateY(0);
+    margin-top: 20px;
+  }
+  header {
+    display: flex;
+    justify-content: space-between;
+  }
+  .perfil_img {
+    max-width: 350px;
+  }
+  .box {
+    margin-top: 60px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+/*# sourceMappingURL=responsive.css.map */
