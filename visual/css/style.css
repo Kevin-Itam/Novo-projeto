@@ -403,6 +403,25 @@ button i {
   font-weight: 300;
 }
 
+.formation {
+  display: flex;
+  flex-direction: row;
+  padding-top: 50px;
+}
+.formation div {
+  text-align: center;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 20px 70px;
+}
+.formation .formation_1 {
+  border-left: 2.1px solid #a5881d;
+  border-right: 2.1px solid #a5881d;
+}
+.formation .formation_2 {
+  border-right: 2.1px solid #a5881d;
+}
+
 .way_profile {
   width: 200px;
   height: 200px;
@@ -427,25 +446,6 @@ button i {
   max-width: 150px;
   display: block;
   animation: rotating 6s infinite linear;
-}
-
-.formation {
-  display: flex;
-  flex-direction: row;
-  padding-top: 50px;
-}
-.formation div {
-  text-align: center;
-  font-size: 16px;
-  font-weight: 600;
-  padding: 20px 70px;
-}
-.formation .formation_1 {
-  border-left: 2.1px solid #a5881d;
-  border-right: 2.1px solid #a5881d;
-}
-.formation .formation_2 {
-  border-right: 2.1px solid #a5881d;
 }
 
 .resume_info {

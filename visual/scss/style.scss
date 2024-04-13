@@ -1,8 +1,7 @@
 @import "./variaveis.scss";
 @import "basestyle.scss";
-// @import "./buton.scss";
 
-// ----- GLOBAL PAGE SETUP -----
+// ----- GLOBAL PAGE SETUP ----- //
 * {
   margin: 0;
   padding: 0;
@@ -17,6 +16,8 @@ body {
   height: 100%;
 }
 // --------------------------- //
+
+// ---- BACKGROUND GIFF ---- //
 video {
   width: 100%;
   height: 100%;
@@ -26,41 +27,30 @@ video {
   left: 0;
   z-index: -1;
 }
-// global page
-.box_container{
-  @include boundaries()
+// --------------------------- //
+
+// ----- GLOBAL SETTINGS ----- //
+.box_container {
+  @include boundaries();
 }
 p {
-  font-size: 18px;
-  line-height: 30px;
+  @include p_txt();
 }
 h4 {
-  @include box_title()
+  @include box_title();
 }
-
 h2 {
-  font-size: 48px;
-  line-height: 90px;
-  margin-bottom: 43px;
-  font-weight: 300;
+  @include h2_title();
 }
-
 .container {
-  max-width: 1130px;
-  padding: 0 15px;
-  margin: auto;
-  overflow: hidden;
+  @include container();
 }
 .container_content {
-  position: relative;
-  z-index: 3;
-  max-width: 770px;
-  width: 100%;
-  margin-left: auto;
-  overflow: hidden;
+  @include content();
 }
+// --------------------------- //
 
-// SIDE BAR
+// ----- HUMBURGER SIDE BAR ----- ///
 .icon_menu {
   position: absolute;
   right: 68px;
@@ -194,8 +184,9 @@ h2 {
 .menu_social a:hover i {
   color: $color-orange;
 }
+// --------------------------- //
 
-//perfil settings
+// ----- SIDE INFO PERFIL ----- //
 .fixo {
   position: fixed;
   top: 50%;
@@ -295,8 +286,9 @@ button {
     font-size: 25px;
   }
 }
+// --------------------------- //
 
-// menu scroll
+// ----- MENU SIDE ----- //
 .active {
   color: $color-orange;
 }
@@ -357,10 +349,11 @@ button {
   margin-top: -5px;
   z-index: -1;
 }
+// --------------------------- //
 
-// config sessao movel \\
+// ----- MAIN CONTENTE ----- //
 
-// page 1
+// ----- SECTION 1 -----
 
 .section_header {
   height: 80%;
@@ -376,6 +369,25 @@ button {
     font-weight: 300;
   }
 }
+.formation {
+  display: flex;
+  flex-direction: row;
+  padding-top: 50px;
+  & div {
+    text-align: center;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 20px 70px;
+  }
+  & .formation_1 {
+    border-left: 2.1px solid $color-orange;
+    border-right: 2.1px solid $color-orange;
+  }
+  & .formation_2 {
+    border-right: 2.1px solid $color-orange;
+  }
+}
+// ----- LINK PORTFOLIO ----- //
 .way_profile {
   width: 200px;
   height: 200px;
@@ -401,25 +413,8 @@ button {
     animation: rotating 6s infinite linear;
   }
 }
-.formation {
-  display: flex;
-  flex-direction: row;
-  padding-top: 50px;
-  & div {
-    text-align: center;
-    font-size: 16px;
-    font-weight: 600;
-    padding: 20px 70px;
-  }
-  & .formation_1 {
-    border-left: 2.1px solid $color-orange;
-    border-right: 2.1px solid $color-orange;
-  }
-  & .formation_2 {
-    border-right: 2.1px solid $color-orange;
-  }
-}
-// page 2
+// --------------------------- //
+// ----- SECTION 2 -----
 
 .resume_info {
   margin-top: 50px;
@@ -450,7 +445,7 @@ button {
   line-height: 30px;
   max-width: 610px;
 }
-// page 3
+// ----- SECTION 3 -----
 
 .list_format {
   position: relative;
@@ -527,7 +522,7 @@ button {
   }
 }
 
-// page 4
+// ----- SECTION 4
 
 .type_skills {
   display: flex;
@@ -569,7 +564,7 @@ button {
   }
 }
 
-// page 5
+// ----- SECTION 5 -----
 
 .projects_position {
   margin-bottom: 68px;
@@ -623,7 +618,9 @@ button {
 .preview_projects:hover h2 {
   text-decoration: #000000;
 }
-// animations section //
+// --------------------------- //
+
+// ANIMATION  //
 
 @keyframes rotating {
   from {
