@@ -22,6 +22,12 @@ video {
   z-index: -1;
 }
 
+.box_container {
+  padding: 68px 0;
+  position: relative;
+  overflow: hidden;
+}
+
 p {
   font-size: 18px;
   line-height: 30px;
@@ -61,29 +67,12 @@ h2 {
 }
 
 .container_content {
+  position: relative;
+  z-index: 3;
   max-width: 770px;
   width: 100%;
   margin-left: auto;
   overflow: hidden;
-}
-
-.formation {
-  display: flex;
-  flex-direction: row;
-  padding-top: 50px;
-}
-.formation div {
-  text-align: center;
-  font-size: 16px;
-  font-weight: 600;
-  padding: 20px 70px;
-}
-.formation .formation_1 {
-  border-left: 2.1px solid #a5881d;
-  border-right: 2.1px solid #a5881d;
-}
-.formation .formation_2 {
-  border-right: 2.1px solid #a5881d;
 }
 
 .icon_menu {
@@ -342,7 +331,7 @@ button i {
 .menu_scroll {
   display: flex;
   flex-direction: column;
-  border: 1px solid #575757;
+  border: 1px solid #000000;
   border-radius: 30px;
   position: fixed;
   right: 68px;
@@ -414,33 +403,6 @@ button i {
   font-weight: 300;
 }
 
-.movel {
-  height: 100%;
-  width: 100%;
-  padding: 28px 0;
-  position: relative;
-  overflow: hidden;
-}
-
-.mobile_container {
-  padding: 68px 0;
-  position: relative;
-  overflow: hidden;
-}
-
-.div_container {
-  position: relative;
-  z-index: 3;
-}
-
-.content_header {
-  overflow: hidden;
-}
-.content_header p {
-  display: block;
-  align-self: baseline;
-}
-
 .way_profile {
   width: 200px;
   height: 200px;
@@ -467,18 +429,23 @@ button i {
   animation: rotating 6s infinite linear;
 }
 
-.about {
-  height: 80%;
-  width: 100%;
-  padding: 28px 0;
-  position: relative;
-  overflow: hidden;
+.formation {
+  display: flex;
+  flex-direction: row;
+  padding-top: 50px;
 }
-
-.about_container {
-  padding: 68px 0;
-  position: relative;
-  overflow: hidden;
+.formation div {
+  text-align: center;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 20px 70px;
+}
+.formation .formation_1 {
+  border-left: 2.1px solid #a5881d;
+  border-right: 2.1px solid #a5881d;
+}
+.formation .formation_2 {
+  border-right: 2.1px solid #a5881d;
 }
 
 .resume_info {
@@ -510,12 +477,6 @@ button i {
 .div_p {
   line-height: 30px;
   max-width: 610px;
-}
-
-.formation_container {
-  padding: 68px 0;
-  position: relative;
-  overflow: hidden;
 }
 
 .list_format {
@@ -599,16 +560,6 @@ button i {
   margin-bottom: 18px;
 }
 
-.section_skills {
-  padding-bottom: 30px;
-}
-
-.skills_container {
-  padding: 68px 0;
-  position: relative;
-  overflow: hidden;
-}
-
 .type_skills {
   display: flex;
   flex-wrap: wrap;
@@ -649,17 +600,6 @@ button i {
   font-size: 20px;
   font-weight: 300;
   margin: 0;
-}
-
-.section_portfolio {
-  padding: 28px 0;
-  position: relative;
-}
-
-.projects_container {
-  padding: 68px 0;
-  position: relative;
-  overflow: hidden;
 }
 
 .projects_position {
