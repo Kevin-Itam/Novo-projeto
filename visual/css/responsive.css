@@ -17,7 +17,7 @@
     justify-content: space-between;
   }
   .perfil_img {
-    max-width: 350px;
+    max-width: 300px;
   }
   .box {
     margin-top: 60px;
@@ -25,6 +25,45 @@
     align-items: center;
     display: flex;
     flex-direction: column;
+  }
+  .container_content {
+    margin: auto;
+  }
+  nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  .link_tree {
+    position: unset;
+    transform: unset;
+    display: flex;
+    gap: 4rem;
+  }
+}
+@media screen and (max-width: 1050px) {
+  .menu_scroll {
+    display: none;
+  }
+  .icon_menu {
+    top: 5px;
+  }
+}
+@media screen and (max-width: 800px) {
+  .fixo {
+    margin: 20px;
+  }
+}
+@media screen and (max-width: 750px) {
+  .perfil_img {
+    max-width: 250px;
+  }
+  .preview {
+    width: 650px;
+  }
+  .projects_position_middle {
+    gap: 50px;
   }
 }
 

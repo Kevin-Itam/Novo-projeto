@@ -602,60 +602,6 @@ button i {
   margin: 0;
 }
 
-.projects_position {
-  margin-bottom: 68px;
-}
-
-.projects_position_middle {
-  display: flex;
-  flex-direction: row;
-  gap: 100px;
-}
-.projects_position_middle .preview {
-  max-width: 300px;
-}
-
-.preview_projects {
-  margin-bottom: 40px;
-}
-.preview_projects h2 {
-  font-size: 24px;
-  font-weight: 300;
-  margin: 0;
-}
-.preview_projects h2 a {
-  display: inline-block;
-  border-bottom: 1px solid transparent;
-  transition: 0.3s;
-}
-
-.preview {
-  overflow: hidden;
-  border-radius: 30px;
-  position: relative;
-  height: 410px;
-  width: 700px;
-  border: 1px solid black;
-}
-.preview img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.preview_projects a {
-  color: #000000;
-  text-decoration: none;
-  display: inline-block;
-  border-bottom: 1px solid transparent;
-  transition: 0.3s;
-}
-
-.preview_projects:hover h2 {
-  text-decoration: #000000;
-}
-
 @keyframes rotating {
   from {
     transform: rotate(0deg);
