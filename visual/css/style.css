@@ -602,6 +602,28 @@ button i {
   margin: 0;
 }
 
+.port_preview {
+  overflow: hidden;
+}
+
+.box_preview {
+  width: 100%;
+}
+
+.preview {
+  width: 100%;
+  max-width: 770px;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.preview img {
+  width: 100%;
+  height: auto;
+  border-radius: 20px;
+  object-fit: cover;
+}
+
 @keyframes rotating {
   from {
     transform: rotate(0deg);

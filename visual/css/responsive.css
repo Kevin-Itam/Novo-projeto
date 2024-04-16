@@ -55,16 +55,5 @@
     margin: 20px;
   }
 }
-@media screen and (max-width: 750px) {
-  .perfil_img {
-    max-width: 250px;
-  }
-  .preview {
-    width: 650px;
-  }
-  .projects_position_middle {
-    gap: 50px;
-  }
-}
 
 /*# sourceMappingURL=responsive.css.map */
