@@ -55,5 +55,67 @@
     margin: 20px;
   }
 }
+@media screen and (max-width: 750px) {
+  .perfil_img {
+    max-width: 250px;
+  }
+  .section_header h1 {
+    font-size: 40px;
+  }
+}
+@media screen and (max-width: 690px) {
+  .way_profile {
+    margin-top: 25px;
+    margin-left: unset;
+  }
+}
+@media screen and (max-width: 660px) {
+  .formation {
+    display: block;
+  }
+  .formation .formation_1 {
+    border-left: none;
+    border-right: none;
+    border-bottom: 2.1px solid #a5881d;
+  }
+  .formation .formation_2 {
+    border-right: none;
+    border-bottom: 2.1px solid #a5881d;
+  }
+}
+@media screen and (max-width: 580px) {
+  .type_skills {
+    gap: 0;
+  }
+}
+@media screen and (max-width: 450px) {
+  h2 {
+    font-size: 32px;
+  }
+  .section_header h1 {
+    font-size: 32px;
+    line-height: 30px;
+  }
+  .list h2 {
+    font-size: 22px;
+  }
+  .list li {
+    font-size: 22px;
+  }
+}
+@media screen and (max-width: 430px) {
+  .fixo {
+    margin: 0;
+  }
+  .list h2 {
+    font-size: 22px;
+  }
+  p {
+    font-size: 16px;
+  }
+  .resume_info .info {
+    grid-template-columns: 100px 30px 222px;
+  }
+}
 
 /*# sourceMappingURL=responsive.css.map */
