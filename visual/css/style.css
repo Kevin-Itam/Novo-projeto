@@ -604,10 +604,23 @@ button i {
 
 .port_preview {
   overflow: hidden;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.pr1 {
+  display: flex;
+  width: 100%;
+  gap: 20px;
 }
 
 .box_preview {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
   width: 100%;
+  text-decoration: none;
 }
 
 .preview {
@@ -615,6 +628,42 @@ button i {
   max-width: 770px;
   overflow: hidden;
   box-sizing: border-box;
+  text-decoration: none;
+}
+
+.port_categories {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+  bottom: 60px;
+  left: 20px;
+  list-style: none;
+}
+.port_categories li {
+  display: block;
+  font-size: 14px;
+  background: #fff;
+  color: #000;
+  padding: 7px 20px;
+  border-radius: 19px;
+  transition: 0.3s;
+}
+
+.box1:hover ul.pot1 li {
+  background-color: #000;
+  color: #fff;
+}
+
+.box2:hover ul.pot2 li {
+  background-color: #000;
+  color: #fff;
+}
+
+.box3:hover ul.pot3 li {
+  background-color: #000;
+  color: #fff;
 }
 
 .preview img {
@@ -622,6 +671,23 @@ button i {
   height: auto;
   border-radius: 20px;
   object-fit: cover;
+}
+
+.tittle_preview {
+  font-size: 22px;
+  color: #000000;
+}
+
+.box1:hover .t1 {
+  text-decoration: underline;
+}
+
+.box2:hover .t2 {
+  text-decoration: underline;
+}
+
+.box3:hover .t3 {
+  text-decoration: underline;
 }
 
 @keyframes rotating {
