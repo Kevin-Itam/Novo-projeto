@@ -3,6 +3,9 @@
     margin: 0;
     gap: 60px;
   }
+  .menu_scroll {
+    display: none;
+  }
   .fixo {
     position: relative;
     max-width: 767px;
@@ -94,6 +97,9 @@
   .type_skills {
     gap: 0;
   }
+  .section_header h1 {
+    font-size: 25px;
+  }
 }
 @media screen and (max-width: 500px) {
   .port_categories {
@@ -101,13 +107,21 @@
     bottom: 40px;
     left: 5px;
   }
+  .pr1 {
+    display: block;
+  }
+  .tittle_preview {
+    font-size: 18px;
+  }
+  .box_preview {
+    margin-bottom: 30px;
+  }
 }
 @media screen and (max-width: 450px) {
   h2 {
     font-size: 32px;
   }
   .section_header h1 {
-    font-size: 32px;
     line-height: 30px;
   }
   .list h2 {
@@ -148,7 +162,7 @@
 }
 @media screen and (max-width: 400px) {
   .link_tree {
-    gap: 0;
+    gap: 5px;
   }
 }
 @media screen and (max-width: 390px) {
