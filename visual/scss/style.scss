@@ -178,11 +178,17 @@ h2 {
   font-size: 25px;
   & i {
     margin-left: 12px;
-    color: #999999;
+    color: #ffffff;
   }
 }
-.menu_social a:hover i {
-  color: $color-orange;
+.menu_social  a:hover .gith{
+  color: rgb(125,125,124);
+}
+.menu_social  a:hover .linked{
+  color:  #0e76a8;
+}
+.menu_social  a:hover .whats{
+  color:  #189D0E;
 }
 // --------------------------- //
 
@@ -255,10 +261,18 @@ header {
   color: black;
   border-radius: 50%;
   transition: 0.5s;
-  &:hover {
-    color: gray;
-    border: 3px solid gray;
-  }
+}
+.icon a:hover .gith{
+  color: rgb(125,125,124);
+
+}
+.icon a:hover .linked{
+  color:  #0e76a8;
+  border: 3px solid  #0e76a8;
+}
+.icon a:hover .whats{
+  color:  #189D0E;
+  border: 3px solid  #189D0E;
 }
 footer {
   & a {
@@ -413,6 +427,10 @@ button {
     display: block;
     animation: rotating 6s infinite linear;
   }
+}
+a:hover .arrow {
+  transition: 0.5s;
+  color: $color-orange;
 }
 // --------------------------- //
 // ----- SECTION 2 -----
@@ -610,6 +628,7 @@ button {
     padding: 7px 20px;
     border-radius: 19px;
     transition: .3s;
+    border: 1px solid black;
   }
 }
 .box1:hover ul.pot1 li {
@@ -631,6 +650,7 @@ button {
   height: auto; 
   border-radius: 20px;
   object-fit: cover;
+  border:1px solid black;
 }
 .tittle_preview{
   font-size: 22px;
